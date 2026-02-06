@@ -6,19 +6,15 @@ estou aprendo a programar em javaSrcipt para dar o ponto de partida para aprende
 # Comandos
 
 
-TRAZER POSSIVEI MUDANÇA DO GITHUB
+AUTENTICAR VIA COMPUTADFOR LOCAL NO GITHUB: 
 ``` 
-GIT PULL
+Gh auth login
 ```
-ADICONAR ARQUIVO NO COMMIT
+CLONAR O REPOSITORIO PARA SUA MAQUINA: 
 ```
-GIT ADD .
+Gh repo clone "Praticas-Java.Script"
 ```
-CRIAR PONTO DE VERSIONAMENTO 
+ABRI O VS CODE:
 ```
-GIT COMMIT -M "Praticas-Java.Script"
+Code .
 ```
-SUBIT A ALTERAÇÃO PARA O GITHUP
-```
-GIT PUSH
- ```
