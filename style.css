@@ -1,0 +1,24 @@
+/* resete e configuração gerais */
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+ 
+}
+body { 
+    background-color: rgba(102, 71, 30, 0.089);
+    background-image: url(assets/textura-de-relevo-pintada_1194-6982.avif);
+}
+h1{ 
+    text-align:center;
+    color: rgba(15, 13, 114, 0.705);
+    font-size: 12,30px;
+}
+
+img{
+    max-width: 50%;
+    display: block;
+    height:auto;
+    margin: 0 auto;
+
+}
