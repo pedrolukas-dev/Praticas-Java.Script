@@ -1,24 +1,23 @@
 # Praticas-Java.Script
-estou aprendo a programar em javaSrcipt para dar o ponto de partida para aprender ser um front end.
 
-# Git
+Estou aprendendo a programar em JavaScript para dar o ponto de partida para aprender um front-end.
 
-# Comandos
+## Git
 
+## Comandos
 
-TRAZER POSSIVEI MUDANÇA DO GITHUB
-``` 
+TRAZER POSSIVEIS MUDANÇA DO GITHUB
+
 GIT PULL
-```
-ADICONAR ARQUIVO NO COMMIT
-```
+
+ADICIONAR ARQUIVO NO COMMIT
+
 GIT ADD .
-```
-CRIAR PONTO DE VERSIONAMENTO 
-```
+
+CRIAR PONTO DE VERSIONAMENTO
+
 GIT COMMIT -M "Praticas-Java.Script"
-```
-SUBIT A ALTERAÇÃO PARA O GITHUP
-```
+
+SUBIR A ALTERAÇÃO PARA O GITHUB
+
 GIT PUSH
- ```
