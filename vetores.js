@@ -1,7 +1,7 @@
 
 //Criando um vetor
 
-const listaNomes =["marta","julia","Ana"]
+const listaNomes =["Marta","julia","Ana"]
 console.log("\nExibindo todos os Nomes:\n")
 console.log(listaNomes)
 
@@ -12,7 +12,7 @@ console.log("\nSegudno Nome:\n")
 console.log(listaNomes [1])
 
 console.log("\nTerceiro Nome:\n")
-console.log(listaNomes [3])
+console.log(listaNomes [2])
 
 console.log("\nAdicionar um novo nome\n")
 listaNomes.push("mariana")
