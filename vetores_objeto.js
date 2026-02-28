@@ -30,3 +30,4 @@ console.log("\nEncontrar um Usuario")
 const usuarioEncontrado = listaDeUsuarios.find(u => u.nome ==="ana")
 console.log(usuarioEncontrado)
 console.log (`nome:${usuarioEncontrado.nome}\n idade:${usuarioEncontrado.idade}`)
+
