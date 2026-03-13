@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   background-image: linear-gradient(to bottom, rgb(64, 52, 112), rgb(40, 28, 59));
+   background-attachment: fixed;
+}
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+    line-height: 200px;
+    width: 500px;
+    height: 200px;
+    margin: auto;
+}
+main{
+    margin: auto;
+    min-height: 450px;
+    width: 450px;
+    border: 1px solid rgba(125, 92, 128, 0.527);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    padding: 20px;
+}
+
+.container{
+    text-align: center;
+    margin-top: 10px;
+}
+#gerarBotao,#limparBotao{
+    text-decoration: none;
+    background-color:white;
+    box-shadow: 2px 2px  5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    width: 150px;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.2s, filter 0.2s;
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#gerarBotao:hover, #limparBotao:hover{
+    color:rgba(206, 200, 200, 0.6);
+    background-color: rgba(206, 200, 200, 0.6);
+    transform: translate(5px 5px);
+}
+#resultadoTabuada{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 0, 0.822);
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+}
+label{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 0, 0.822);
+    text-align: center;
+    margin: auto;
+}
+#numeroInput{
+    width: 10 px;
+   text-align: center;
+}
