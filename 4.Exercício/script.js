@@ -1,23 +1,31 @@
 function verificarVoto() {
-    // Captura o valor do input de idade
     const idade = document.getElementById('idade').value;
     const resultado = document.getElementById('resultado');
-    // Validação simples para campo vazio
+
+    // Limpa as cores antes de verificar
+    resultado.className = '';
+
     if (idade === "") {
         resultado.innerText = "Por favor, digite uma idade.";
         return;
     }
+
     const anos = parseInt(idade);
+
     if (anos < 16) {
-        resultado.innerText = "Você não pode votar.";
+        resultado.innerText = "Não pode votar.";
+        resultado.classList.add('voto-bloqueado');
     } 
     else if (anos >= 16 && anos <= 17) {
-        resultado.innerText = "Seu voto é opcional.";
+        resultado.innerText = "Voto opcional.";
+        resultado.classList.add('voto-opcional');
     } 
     else if (anos >= 18 && anos <= 65) {
-        resultado.innerText = "Seu voto é OBRIGATÓRIO.";
+        resultado.innerText = "Voto OBRIGATÓRIO.";
+        resultado.classList.add('voto-obrigatorio');
     } 
     else {
-        resultado.innerText = "Seu voto não é mais obrigatório (opcional).";
+        resultado.innerText = "Voto opcional.";
+        resultado.classList.add('voto-opcional');
     }
 }
