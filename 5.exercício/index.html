@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Aposentadoria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card-container">
+        <header>
+            <div class="logo-placeholder">CORP LEGACY</div>
+        </header>
+
+        <h1>Verificar Aposentadoria</h1>
+        
+        <div class="input-group">
+            <label>CÓDIGO DO EMPREGADO:</label>
+            <input type="number" id="codigo" placeholder="Matrícula">
+            
+            <label>ANO DE NASCIMENTO:</label>
+            <input type="number" id="anoNascimento" placeholder="Ex: 1980">
+            
+            <label>TEMPO DE TRABALHO (ANOS):</label>
+            <input type="number" id="tempoTrabalho" placeholder="Ex: 25">
+        </div>
+
+        <button onclick="verificarAposentadoria()">Analisar Qualificação</button>
+
+        <div class="result-group">
+            <p id="resultado"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

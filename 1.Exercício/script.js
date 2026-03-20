@@ -20,7 +20,7 @@ botao.addEventListener("click", function () {
   const media = (nota1 + nota2 + nota3) / 3;
 
   // situação
-  let situacao = media >= 6 ? "Aprovado" : "Reprovado";
+  let situacao = media >= 7 ? "Aprovado" : "Reprovado";
 
   // mostrar resultado
   document.getElementById("resultadoTabuada").innerText =

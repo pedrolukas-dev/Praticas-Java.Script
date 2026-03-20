@@ -1,0 +1,131 @@
+/* ============================================================
+   ESTILO COMPLETO - VIBE COWABUNGA / TMNT STREET ART
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Permanent+Marker&display=swap');
+
+body {
+    /* CAMINHO ATUALIZADO: imagens.5/fundo.jpg */
+    /* Se sua imagem for .png ou .jpeg, ajuste a extensão abaixo */
+    background-image: url('imagens.5/fundo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Permanent Marker', cursive;
+    background-color: #2d3436; /* Cor de fundo caso a imagem falhe */
+}
+
+/* Container Estilo "Cartaz de Rua" */
+.card-container {
+    background-color: #f1c40f; /* Amarelo Vibrante */
+    width: 90%;
+    max-width: 420px;
+    padding: 35px;
+    text-align: center;
+    
+    /* Borda e Sombra Estilo HQ (Pop-Art) */
+    border: 6px solid #000;
+    box-shadow: 12px 12px 0px rgba(0, 0, 0, 1);
+    
+    position: relative;
+    transform: rotate(-1deg); /* Leve inclinação "rebelde" */
+}
+
+/* Logotipo */
+.logo-placeholder {
+    display: inline-block;
+    font-family: 'Bungee', cursive;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #e74c3c; /* Vermelho Raphael */
+    padding: 8px 15px;
+    border: 3px solid #000;
+    box-shadow: 5px 5px 0px #000;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-family: 'Bungee', cursive;
+    font-size: 2.2rem;
+    color: #fff;
+    margin: 0 0 20px 0;
+    -webkit-text-stroke: 1.5px #000;
+    text-shadow: 4px 4px 0px #e67e22; /* Laranja Michelangelo */
+}
+
+/* Inputs */
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    color: #000;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #fff;
+    border: 4px solid #000;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.3rem;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input[type="number"]:focus {
+    background-color: #f9f9f9;
+    border-color: #2ecc71; /* Verde Tartaruga */
+}
+
+/* Botão */
+button {
+    width: 100%;
+    background-color: #9b59b6; /* Roxo Donatello */
+    color: #fff;
+    padding: 15px;
+    border: 4px solid #000;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 6px 6px 0px #000;
+    transition: 0.1s;
+}
+
+button:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 3px 3px 0px #000;
+}
+
+button:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0px 0px 0px #000;
+}
+
+/* Resultado */
+#resultado {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    color: #000;
+    border-top: 3px dashed #000;
+    padding-top: 15px;
+}
+
+/* Cores do JS */
+.voto-obrigatorio { color: #e74c3c !important; text-decoration: underline; }
+.voto-opcional { color: #2ecc71 !important; }
+.voto-bloqueado { color: #3498db !important; }
