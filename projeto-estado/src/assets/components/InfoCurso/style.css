@@ -1,0 +1,54 @@
+/* styless.css (do componente InfoCurso) */
+
+/* Remova qualquer estilização de 'body' ou fundo daqui para não quebrar o layout do App */
+
+/* O Card do Curso com o MESMO estilo Glassmorphism do Aluno */
+.info-Curso {
+    /* Efeito de Vidro Fosco (Glassmorphism) */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+    /* Bordas Arredondadas e Sutis */
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    
+    /* Sombra Suave para Profundidade */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    
+    /* Espaçamento Interno e Largura */
+    padding: 2rem;
+    width: 300px; /* Mesma largura do card de Aluno */
+    
+    /* Cor do Texto (Branco para contrastar com o fundo ciano) */
+    color: white;
+    
+    /* Alinhamento Interno (opcional, para centralizar o texto) */
+    text-align: center;
+    
+    /* Animação suave no hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de hover igual ao do Aluno */
+.info-Curso:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 45px 0 rgba(31, 38, 135, 0.5);
+}
+
+/* Título com o MESMO destaque (Maiúsculo e Linha inferior) */
+.info-Curso h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Estilo dos Parágrafos igual ao do Aluno */
+.info-Curso p {
+    font-size: 1.1rem;
+    margin: 15px 0;
+    font-weight: 300;
+}

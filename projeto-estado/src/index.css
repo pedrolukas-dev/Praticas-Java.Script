@@ -1,0 +1,33 @@
+/* No seu App.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /* O fundo degradê deve ficar aqui no BODY para preencher tudo */
+    background: radial-gradient(circle, #2ac2da, #2389d5);
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw; /* Garante que o container use a largura toda da tela */
+    
+    /* REMOVA a linha do background: radial-gradient daqui! */
+    /* REMOVA a linha do color: white; se quiser o título preto */
+    
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+/* Estilizando o título para ele não sumir no fundo claro */
+.app-container h1 {
+    font-family: sans-serif;
+    color: #1a1a1a; 
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}

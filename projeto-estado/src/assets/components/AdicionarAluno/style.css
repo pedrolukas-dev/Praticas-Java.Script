@@ -1,0 +1,60 @@
+/* Centralizando o card na tela (opcional, mas ajuda na visualização) */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Animação do fundo */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Estilo do Card "Glass" */
+.info-aluno {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    padding: 2rem;
+    width: 300px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.info-aluno:hover {
+    transform: translateY(-10px);
+}
+
+.info-aluno h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.info-aluno p {
+    font-size: 1.1rem;
+    margin: 15px 0;
+    font-weight: 300;
+}
+
+/* Deixando os labels em negrito e com cor diferente */
+.info-aluno p strong {
+    color: #ffd700; /* Um dourado para destacar */
+    text-transform: capitalize;
+}
