@@ -1,46 +1,49 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-barca-azul: #004D98;
+  --color-barca-grena: #A50044;
+  --color-barca-amarelo: #EDBB00;
+}
 
 @layer base {
   body {
-    @apply bg-[#004D98] overflow-hidden;
-    margin: 0;
-    font-family: 'Inter', sans-serif;
+    @apply m-0 p-0 overflow-hidden antialiased;
   }
 }
 
-/* Estilização Customizada Estilo Barça */
 @layer components {
-  /* O formulário lateral */
   .menu-lateral {
-    @apply bg-gradient-to-b from-[#004D98] to-[#A50044] border-l-4 border-[#EDBB00] shadow-2xl;
+    @apply bg-gradient-to-b from-barca-azul to-barca-grena border-l-4 border-barca-amarelo shadow-2xl;
   }
 
-  /* Inputs estilizados */
   .input-barca {
-    @apply bg-white/10 border border-white/20 rounded-lg p-3 text-white placeholder-white/50 focus:border-[#EDBB00] focus:ring-1 focus:ring-[#EDBB00] outline-none transition-all;
+    @apply bg-white/10 border border-white/20 rounded-lg p-2.5 text-white placeholder-white/40 
+           focus:border-barca-amarelo focus:ring-1 focus:ring-barca-amarelo outline-none transition-all;
   }
 
-  /* Botão principal */
+  /* Estilização para as opções do select */
+  select.input-barca option {
+    @apply bg-barca-grena text-white;
+  }
+
   .btn-barca {
-    @apply bg-[#EDBB00] text-[#004D98] font-black uppercase tracking-widest py-4 rounded-xl hover:bg-white hover:scale-105 active:scale-95 transition-all shadow-lg;
+    @apply bg-barca-amarelo text-barca-azul font-black uppercase tracking-tighter py-3.5 rounded-xl 
+           hover:bg-white hover:scale-[1.02] active:scale-95 transition-all shadow-lg cursor-pointer;
   }
 
-  /* Tooltip do jogador */
   .tooltip-jogador {
-    @apply bg-[#A50044] border-2 border-[#EDBB00] rounded-2xl p-4 shadow-2xl;
+    @apply bg-barca-grena border-2 border-barca-amarelo rounded-2xl p-4 shadow-2xl;
   }
 }
 
-/* Efeito de brilho no ícone do jogador */
 .ponto-jogador {
-  box-shadow: 0 0 20px rgba(237, 187, 0, 0.6);
-  animation: pulse 2s infinite;
+  box-shadow: 0 0 25px rgba(237, 187, 0, 0.7);
+  animation: pulse-barca 2s infinite;
 }
 
-@keyframes pulse {
-  0% { transform: translate(-50%, -50%) scale(1); }
-  50% { transform: translate(-50%, -50%) scale(1.1); }
-  100% { transform: translate(-50%, -50%) scale(1); }
+@keyframes pulse-barca {
+  0% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.1); }
+  100% { opacity: 0.8; transform: scale(1); }
 }
