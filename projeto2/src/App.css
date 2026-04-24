@@ -1,42 +1,109 @@
+/* Variáveis - Tema Carta Antiga / Tio Patinhas */
+:root {
+  --paper-bg: #F4EAD5;    /* Cor de papel envelhecido / pergaminho */
+  --ink-dark: #2C1E16;    /* Cor de tinta antiga muito escura (quase preto) */
+  --pure-gold: #D4AF37;   /* Dourado para manter o luxo */
+}
+
+/* 1. Reset Global: Garante que não há margens a empurrar o conteúdo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Fundo da página estilo Carta Antiga */
+body {
+  background-color: var(--paper-bg);
+  color: var(--ink-dark);
+  font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+/* 3. Forçar o React a alinhar ao topo e à esquerda */
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinha tudo à esquerda */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* 4. Estilo do Cabeçalho */
+.premium-header {
+  width: 100%;
+  padding: 20px 40px;
+  /* Uma linha subtil para separar o cabeçalho do resto da "carta" */
+  border-bottom: 2px solid var(--pure-gold); 
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* 5. Colocar o menu ao lado da logo (Canto superior esquerdo) */
+.header-container {
+  display: flex;
+  justify-content: flex-start; /* Empurra tudo para a esquerda */
+  align-items: center;
+  gap: 60px; /* Espaço entre o Tio Patinhas e os botões do menu */
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Área da Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
 }
 
-.card {
-  padding: 2em;
+.logo-container img {
+  height: 65px;
+  width: auto;
+  background-color: var(--pure-gold);
+  border: 2px solid var(--ink-dark);
+  border-radius: 50%;
+  padding: 5px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.read-the-docs {
-  color: #888;
+.logo-container span {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--pure-gold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  /* Contorno escuro para ler bem no fundo claro */
+  text-shadow: 1px 1px 0px var(--ink-dark),
+              -1px -1px 0px var(--ink-dark),
+               1px -1px 0px var(--ink-dark),
+              -1px  1px 0px var(--ink-dark);
+}
+
+/* Menu de Navegação - Agora com muito destaque! */
+.nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: var(--ink-dark); /* Cor escura para contrastar com o papel */
+  font-size: 1.2rem;
+  font-weight: bold; /* Letra mais grossa para destacar */
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+/* Efeito ao passar o rato (mouse) */
+.nav-menu a:hover {
+  color: var(--paper-bg);
+  background-color: var(--ink-dark);
+}
+
+/* Link Ativo (A página onde o utilizador está no momento) */
+.nav-menu a.active {
+  background-color: var(--pure-gold);
+  color: var(--ink-dark);
+  border: 1px solid var(--ink-dark);
+  /* Sombra mais "dura" para dar um aspeto vintage/clássico */
+  box-shadow: 3px 3px 0px var(--ink-dark); 
 }
