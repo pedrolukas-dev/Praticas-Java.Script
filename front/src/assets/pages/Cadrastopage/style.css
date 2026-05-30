@@ -1,0 +1,67 @@
+/* Container do formulário */
+.cadastro-page {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.cadastro-page h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* Grupos de Label e Input */
+.form-grupo {
+    display: flex;
+    flex-direction: column; /* Coloca a label em cima do input */
+    margin-bottom: 20px;
+}
+
+.form-grupo label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.form-grupo input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+/* Muda a cor da borda quando clicamos no input */
+.form-grupo input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Estilo do Botão */
+.cadastro-page button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cadastro-page button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para quando o botão estiver desabilitado (carregando) */
+.cadastro-page button:disabled {
+    background-color: #99c2ff;
+    cursor: not-allowed;
+}

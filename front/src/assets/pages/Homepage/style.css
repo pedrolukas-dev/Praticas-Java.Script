@@ -1,4 +1,25 @@
-.home-page{
-    text-align: center;
-    font-family: Arial, sans-serif;
+/* Container principal da Homepage */
+.homepage {
+  max-width: 600px;
+  margin: 80px auto; /* Centraliza horizontalmente e dá um espaço no topo */
+  text-align: center; /* Centraliza todo o texto por padrão */
+  padding: 50px 30px;
+  font-family: Arial, sans-serif;
+  background-color: #f8fbff; /* Um fundo azul bem clarinho e amigável */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 123, 255, 0.1); /* Sombra azulada e suave */
+}
+
+/* Estilo do Título */
+.homepage h1 {
+  color: #007bff; /* Mesmo azul do cabeçalho da sua tabela */
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+/* Estilo do Parágrafo */
+.homepage p {
+  color: #555555;
+  font-size: 1.1rem;
+  line-height: 1.6; /* Melhora a leitura aumentando o espaço entre as linhas */
 }

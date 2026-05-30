@@ -1,0 +1,48 @@
+/* Container principal da página */
+.lista-aluno {
+  max-width: 800px;
+  margin: 40px auto; /* Centraliza a div na tela com margem no topo/base */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar destaque */
+}
+
+.lista-aluno h1 {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+/* Estilização da Tabela */
+.tabela-aluno {
+  width: 100%;
+  border-collapse: collapse; /* Remove o espaço entre as bordas das células */
+}
+
+/* Células e Cabeçalhos */
+.tabela-aluno th, 
+.tabela-aluno td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+}
+
+/* Cabeçalho específico (A linha azul) */
+.tabela-aluno th {
+  background-color: #007bff; /* Azul clássico */
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Efeito Zebrado nas linhas (alterna a cor do fundo) */
+.tabela-aluno tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Efeito Hover (Muda de cor ao passar o mouse por cima) */
+.tabela-aluno tbody tr:hover {
+  background-color: #f1f8ff;
+  cursor: pointer;
+}
